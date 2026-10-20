@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Image Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page image-page">
+  <header class="top-nav"><a href="index.html">Google Search</a><a href="advanced.html">Advanced Search</a></header>
+  <main class="home-main">
+    <a class="google-logo" href="index.html" aria-label="Google home"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span><span class="image-label">Images</span></a>
+    <form class="search-form" action="https://www.google.com/search" method="get">
+      <input type="hidden" name="tbm" value="isch">
+      <label class="search-box" for="image-query">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input id="image-query" type="text" name="q" aria-label="Search images" autocomplete="off" autofocus>
+      </label>
+      <div class="search-actions"><input class="search-button" type="submit" value="Google Image Search"></div>
+    </form>
+  </main>
+  <footer class="footer"><span>Find images with Google</span></footer>
+</body>
+</html>

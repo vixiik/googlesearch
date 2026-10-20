@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #202124; }
+body { margin: 0; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.top-nav { display: flex; justify-content: flex-end; align-items: center; gap: 22px; padding: 22px 30px; font-size: 13px; }
+.home-page { display: flex; flex-direction: column; }
+.home-main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 105px 22px 80px; }
+.google-logo { display: inline-flex; align-items: baseline; font-family: "Google Sans", Arial, sans-serif; font-size: 86px; font-weight: 500; letter-spacing: -5px; line-height: 1.1; margin-bottom: 28px; }
+.blue { color: #4285f4; }.red { color: #ea4335; }.yellow { color: #fbbc05; }.green { color: #34a853; }
+.search-form { width: min(100%, 584px); }
+.search-box { width: 100%; height: 48px; border: 1px solid #dfe1e5; border-radius: 28px; display: flex; align-items: center; padding: 0 15px; transition: box-shadow .15s, border-color .15s; }
+.search-box:hover, .search-box:focus-within { border-color: transparent; box-shadow: 0 1px 6px rgba(32,33,36,.28); }
+.search-icon { width: 20px; height: 20px; flex: 0 0 auto; fill: none; stroke: #9aa0a6; stroke-width: 1.8; margin-right: 12px; }
+.search-box input { border: 0; outline: 0; flex: 1; min-width: 0; font-size: 16px; color: #202124; background: transparent; }
+.search-actions { display: flex; justify-content: center; gap: 12px; margin-top: 28px; }
+.search-button { font-size: 14px; color: #3c4043; background: #f8f9fa; border: 1px solid #f8f9fa; border-radius: 4px; padding: 10px 16px; cursor: pointer; }
+.search-button:hover { box-shadow: 0 1px 1px rgba(0,0,0,.1); border-color: #dadce0; }
+.footer { background: #f2f2f2; color: #70757a; padding: 18px 30px; font-size: 13px; }
+.image-page .home-main { padding-top: 105px; }
+.image-label { font-size: 16px; letter-spacing: 0; color: #4285f4; margin-left: 10px; font-weight: 400; }
+.advanced-page { min-height: 100vh; display: flex; flex-direction: column; }
+.advanced-header { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: #f1f3f4; }
+.mini-logo { font-size: 25px; letter-spacing: -1.3px; font-weight: 600; }
+.top-link { font-size: 13px; color: #3c4043; }
+.advanced-main { padding: 38px 42px 50px; flex: 1; }
+.advanced-main h1 { color: #d93025; font-size: 20px; font-weight: 400; margin: 0 0 28px; }
+.advanced-rule { height: 1px; background: #ebebeb; margin: 0 -42px 34px; }
+.advanced-form { max-width: 1000px; }
+.advanced-intro, .advanced-row { display: grid; grid-template-columns: 190px minmax(220px, 570px) minmax(210px, 1fr); gap: 16px; align-items: center; }
+.advanced-intro { font-size: 16px; margin-bottom: 18px; }
+.how-heading { grid-column: 3; color: #777; font-size: 13px; font-weight: 700; }
+.advanced-row { margin: 0 0 16px; font-size: 13px; }
+.advanced-row input { width: 100%; height: 30px; border: 1px solid #d9d9d9; border-top-color: #c0c0c0; padding: 4px 8px; font: inherit; outline: none; }
+.advanced-row input:focus { border: 1px solid #4d90fe; box-shadow: inset 0 1px 2px rgba(0,0,0,.1); }
+.advanced-row small { color: #555; font-size: 11px; line-height: 1.4; }
+.advanced-row small b { color: #666; font-family: monospace; font-weight: 400; }
+.advanced-submit { display: grid; grid-template-columns: 190px minmax(220px, 570px) minmax(210px, 1fr); gap: 16px; margin-top: 25px; }
+.advanced-submit button { grid-column: 2; justify-self: end; background: #4d90fe; border: 1px solid #3079ed; border-radius: 2px; color: white; padding: 9px 13px; font-size: 11px; font-weight: 700; cursor: pointer; }
+.advanced-submit button:hover { background: #357ae8; border-color: #2f5bb7; }
+.advanced-footer { background: #f2f2f2; color: #70757a; padding: 18px 30px; font-size: 13px; }
+@media (max-width: 760px) {
+  .home-main { padding-top: 80px; }
+  .google-logo { font-size: 68px; }
+  .advanced-main { padding: 28px 22px 40px; }
+  .advanced-rule { margin-left: -22px; margin-right: -22px; }
+  .advanced-intro, .advanced-row { grid-template-columns: 1fr; gap: 7px; }
+  .how-heading, .advanced-row small { display: none; }
+  .advanced-submit { grid-template-columns: 1fr; }
+  .advanced-submit button { grid-column: 1; }
+}
